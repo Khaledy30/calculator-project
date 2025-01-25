@@ -70,8 +70,16 @@ describe("Calculator", () => {
     expect(getDisplayValue(calculator)).toBe("0.6666666666666666");
   });
 
-  test("should handle invalid input", () => {
+  test("should handle invalid input and return error", () => {
     addInputToDisplay(calculator, "2+");
+    computeResultFromDisplay(calculator);
+    expect(getDisplayValue(calculator)).toBe("Error");
+  });
+
+  test("should try sum alphabetical values and return error", () => {
+    addInputToDisplay(calculator, "a");
+    addInputToDisplay(calculator, "+");
+    addInputToDisplay(calculator, "b");
     computeResultFromDisplay(calculator);
     expect(getDisplayValue(calculator)).toBe("Error");
   });
