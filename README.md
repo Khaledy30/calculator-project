@@ -1,6 +1,6 @@
 # Calculator Project
 
-Este projeto surgiu como um desafio pessoal. Há algum tempo, criei um projeto de calculadora simples, utilizando JS e HTML, algo bem simples com declarações das variáveis em português, e, agora decidi refazer esse mesmo projeto (tirando a parte do HTML) utilizando **TypeScript** e boas práticas obtidas ao longo dos anos, para avaliar a evolução que adquiri ao longo da minha jornada como desenvolvedor.
+Este projeto surgiu como um desafio pessoal. Há algum tempo, criei um projeto de calculadora simples, utilizando JS e HTML, algo bem simples com declarações das variáveis em português, e, agora decidi refazer esse mesmo projeto utilizando **TypeScript** e boas práticas obtidas ao longo dos anos, para avaliar a evolução que adquiri ao longo da minha jornada como desenvolvedor.
 
 ---
 
@@ -66,13 +66,18 @@ Siga o passa a passo abaixo para configurar e executar o projeto localmente:
 ```
 calculator-project/
 ├── src/
-│   ├── calculator.ts        # Código principal da calculadora
+│   ├── calculator.ts       # Código principal da calculadora
+│   ├── ui.ts               # Lógica da interface do usuário
+│   ├── index.html          # Estrutura HTML da calculadora
+│   ├── styles.css          # Estilos CSS da interface
+│   ├── calculator.js       # Versão compilada da lógica principal
+│   └── ui.js               # Versão compilada da interface
 ├── tests/
-│   ├── calculator.test.ts   # Testes unitários da calculadora
-├── .gitignore               # Arquivos ignorados pelo Git
-├── package.json             # Configurações do projeto
-├── tsconfig.json            # Configurações do TypeScript
-├── README.md                # Documentação do projeto
+│   ├── calculator.test.ts  # Testes unitários da calculadora
+├── .gitignore              # Arquivos ignorados pelo Git
+├── package.json            # Configurações do projeto
+├── tsconfig.json           # Configurações do TypeScript
+└── README.md               # Documentação do projeto
 ```
 
 ### 🛡️ Testes
